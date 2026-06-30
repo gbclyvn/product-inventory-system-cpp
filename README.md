@@ -1,26 +1,26 @@
 # product-inventory-system-cpp
 
-A simple, modern C++ console application that tracks and manages a custom product inventory using object-oriented programming principles.
+A console-based inventory management system that utilizes an object-oriented approach to register, track, and analyze multiple product records dynamically.
 
 ## Features
-- **Object-Oriented Architecture**: Utilizes a robust custom `Product` class encapsulation.
-- **Clean Namespace Management**: Explicitly uses `std::` prefixes without global namespace pollution (`using namespace std`).
-- **Dynamic Memory Allocation**: Employs `std::vector` for standard-compliant data storage instead of non-standard Variable Length Arrays (VLAs).
-- **Automated Calculations**: Computes individual product inventory valuation automatically.
+- **Object-Oriented Architecture**: Groups attributes and interactions into a unified `Product` class to guarantee data isolation.
+- **Dynamic Dataset Sizing**: Resizes storage allocations safely at runtime according to user-defined inventory limits.
+- **Automated Financial Tracking**: Calculates itemized product inventory financial value automatically by evaluating price against stock counts.
+- **Batch Processing Flow**: Handles multi-item operational routines via independent dataset collection and structured terminal reports.
 
 ## Requirements
-- A modern C++ compiler supporting C++11 or higher (e.g., GCC/MinGW, Clang, MSVC).
+- A modern C++ compiler (e.g., GCC/MinGW, Clang, MSVC).
 
 ## Compilation and Execution
 
 Compile the source code using `g++`:
 ```bash
-g++ main.cpp -o main
+g++ main.cpp -o inventory
 ```
 
 Run the compiled executable:
 ```bash
-.\main
+.\inventory
 ```
 
 ## Example Usage
@@ -28,30 +28,30 @@ Run the compiled executable:
 Enter number of products: 2
 
 Entering details for Product 1
-Enter Product Name: Laptop
-Enter Product ID: LPT-100
-Enter Price: 899.99
-Enter Quantity: 5
+Enter Product Name: Monitor
+Enter Product ID: MON-4K
+Enter Price: 299.99
+Enter Quantity: 3
 
 Entering details for Product 2
-Enter Product Name: Mouse
-Enter Product ID: MS-200
-Enter Price: 25.50
-Enter Quantity: 10
+Enter Product Name: Keyboard
+Enter Product ID: KB-MECH
+Enter Price: 89.50
+Enter Quantity: 5
 
 ===== PRODUCT INVENTORY =====
 
 --- Product Details ---
-Product Name: Laptop
-Product ID: LPT-100
-Price: 899.99
-Quantity: 5
-Total Value: 4499.95
+Product Name: Monitor
+Product ID: MON-4K
+Price: 299.99
+Quantity: 3
+Total Value: 899.97
 
 --- Product Details ---
-Product Name: Mouse
-Product ID: MS-200
-Price: 25.50
-Quantity: 10
-Total Value: 255
+Product Name: Keyboard
+Product ID: KB-MECH
+Price: 89.50
+Quantity: 5
+Total Value: 447.5
 ```
